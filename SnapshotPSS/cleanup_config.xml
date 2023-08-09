@@ -1,0 +1,10 @@
+<Configuration>
+    <DoradoStorage>192.168.0.1</DoradoStorage>                              <!-- IP address or FQDN of your Dorado storage array to access the management interface -->
+    <vCenter>192.168.0.2</vCenter>                                          <!-- IP address or FQDN of your vCenter server -->
+    <VMName>MyVM_Name</VMName>                                              <!-- Name of the VM you want to restore or cleanup -->
+    <RecoverHost>esx-01.my-domain.com</RecoverHost>                         <!-- Name of the Host declared on the Dorado storage array. Its name or IP should match a vSphere VMHost -->
+    <!--  <iSStoragevMotionVM>true</iSStoragevMotionVM>  -->                <!-- Switch to specify that a VM has been moved by storage vMotion to another datastore and shouldn't be removed. Defaults to false, only 'true' is recognized in the Config File. -->
+    <!--  <DatastoreName>snap-326d85z4-LunName</DatastoreName>  -->         <!-- Datastore Name to cleanup  - used when the iSStoragevMotionVM switch is enabled -->
+    <!--  <LogPath>C:\Users\myUser\Folders</LogPath>  -->                   <!-- Folder in which the log file will be created - defaults to the script's '\Logs' directory -->
+    <!--  <LogName>myLogFileName.log</LogName>  -->                         <!-- File name created to store the logs - defaults to the script's name with a timestamp prefix -->
+</Configuration>
