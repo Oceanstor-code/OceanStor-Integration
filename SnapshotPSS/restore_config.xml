@@ -1,0 +1,14 @@
+<Configuration>
+    <DoradoStorage>192.168.0.1</DoradoStorage>                              <!-- IP address or FQDN of your Dorado storage array to access the management interface -->
+    <vCenter>192.168.0.2</vCenter>                                          <!-- IP address or FQDN of your vCenter server -->
+    <VMName>MyVM_Name</VMName>                                              <!-- Name of the VM you want to restore or cleanup -->
+    <RecoverHost>esx-01.my-domain.com</RecoverHost>                         <!-- Name of the Host declared on the Dorado storage array. Its name or IP should match a vSphere VMHost -->
+    <!--  <HyperCDPDuplicateName>myCDPDuplicate</HyperCDPDuplicateName>  --><!-- Name of the duplicate of the HyperCDP snapshot - if not specified, it'll be based on the origin volume with a timestamp suffix -->
+    <!--  <RestoredVMName>MyRestoredVMName</RestoredVMName>  -->            <!-- Name of the new VM if specified (Restore Mode only) - else, it'll be based on the origin VM with a timestamp suffix -->
+    <!--  <RestoredVMFolderName>Apps</RestoredVMFolderName>  -->            <!-- Folder to register the VM into (Restore Mode only) - defaults to the origin VM folder -->
+    <!--  <RestoredResourcePoolName>Resources</RestoredResourcePoolName> --><!-- Resource Pool to register the VM into (Restore Mode only) - defaults to the origin VM ResourcePool -->
+    <!--  <StartRestoredVM>true</StartRestoredVM>  -->                      <!-- Boot the restored VM if set to true - defaults to false. Only 'true' will be recognized in the Config File -->
+    <!--  <KeepRestoredVMNetwork>true</KeepRestoredVMNetwork>  -->          <!-- Does not disconnect the restored VM Network Adapters if set to true - defaults to false. Only 'true' will be recognized in the Config File -->
+    <!--  <LogPath>C:\Users\myUser\Folders</LogPath>  -->                   <!-- Folder in which the log file will be created - defaults to the script's '\Logs' directory -->
+    <!--  <LogName>myLogFileName.log</LogName>  -->                         <!-- File name created to store the logs - defaults to the script's name with a timestamp prefix -->
+</Configuration>
